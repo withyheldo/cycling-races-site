@@ -1,0 +1,3 @@
+[build]
+  publish = "output/cycling-races-site-repo"
+  command = ""

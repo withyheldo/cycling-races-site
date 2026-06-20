@@ -1,0 +1,8 @@
+[
+  {"discipline":"road","name":"Tour de Suisse","date":"June 17–21","profile":"Mixed / mountainous stages","uk":"TNT Sports / HBO Max","usa":"Peacock / NBC Sports","canada":"FloBikes"},
+  {"discipline":"road","name":"Tour de France","date":"July 4–26","profile":"All-round stage race","uk":"TNT Sports / HBO Max","usa":"Peacock","canada":"FloBikes"},
+  {"discipline":"gravel","name":"Dalby Grit","date":"June 19–21","profile":"Competitive gravel / forest terrain","uk":"Event stream / TBA","usa":"Event stream / TBA","canada":"Event stream / TBA"},
+  {"discipline":"gravel","name":"Oregon Trail Gravel Grinder","date":"July 8–12","profile":"Stage gravel endurance","uk":"Gravel Earth Series TV / TBA","usa":"Gravel Earth Series TV / TBA","canada":"Gravel Earth Series TV / TBA"},
+  {"discipline":"mtb","name":"Lenzerheide","date":"June 19–21","profile":"Cross-country / downhill","uk":"TNT Sports / UCI YouTube","usa":"UCI YouTube / event platform","canada":"UCI YouTube / event platform"},
+  {"discipline":"mtb","name":"Pal Arinsal","date":"July 9–12","profile":"Cross-country / downhill","uk":"TNT Sports / UCI YouTube","usa":"UCI YouTube / event platform","canada":"UCI YouTube / event platform"}
+]

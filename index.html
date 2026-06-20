@@ -1,65 +1,60 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>June & July Cycling Guide</title>
-  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=cabinet-grotesk@500,700&display=swap" rel="stylesheet">
+  <title>LikeB1kes | Stage Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
   <style>
-    :root,[data-theme="light"]{--bg:#f7f6f2;--surface:#f9f8f5;--surface-2:#fbfbf9;--offset:#edeae5;--border:#d4d1ca;--text:#28251d;--muted:#7a7974;--primary:#01696f;--blue:#006494;--orange:#da7101;--green:#437a22;--rust:#964219;--shadow:0 8px 24px rgba(0,0,0,.08);--r-xl:1rem;--r-lg:.75rem;--r-md:.5rem;--r-full:9999px;--body:'Satoshi',sans-serif;--display:'Cabinet Grotesk',sans-serif;--s1:.25rem;--s2:.5rem;--s3:.75rem;--s4:1rem;--s5:1.25rem;--s6:1.5rem;--s8:2rem;--s10:2.5rem;--s12:3rem;--t-xs:clamp(.75rem,.7rem+.25vw,.875rem);--t-sm:clamp(.875rem,.8rem+.35vw,1rem);--t-base:clamp(1rem,.95rem+.25vw,1.125rem);--t-lg:clamp(1.125rem,1rem+.75vw,1.5rem);--t-xl:clamp(1.5rem,1.2rem+1.25vw,2.25rem);--t-2xl:clamp(2rem,1.2rem+2.5vw,3.5rem)}
-    [data-theme="dark"]{--bg:#171614;--surface:#1c1b19;--surface-2:#201f1d;--offset:#22211f;--border:#393836;--text:#cdccca;--muted:#979591;--primary:#4f98a3;--blue:#5591c7;--orange:#fdab43;--green:#6daa45;--rust:#bb653b;--shadow:0 12px 32px rgba(0,0,0,.35)}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;font:16px/1.6 var(--body);color:var(--text);background:radial-gradient(circle at top left,color-mix(in srgb,var(--primary) 16%,transparent),transparent 34%),radial-gradient(circle at top right,color-mix(in srgb,var(--blue) 14%,transparent),transparent 28%),var(--bg)}
-    a{color:inherit;text-decoration:none}button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}img,svg{display:block;max-width:100%}.skip{position:absolute;left:1rem;top:-40px;background:var(--primary);color:#fff;padding:.5rem .75rem;border-radius:.5rem}.skip:focus{top:1rem}
-    header{position:sticky;top:0;z-index:10;backdrop-filter:blur(16px);background:color-mix(in srgb,var(--bg) 82%,transparent);border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
-    .nav,.wrap{max-width:1200px;margin:0 auto;padding:1rem}.nav{display:flex;justify-content:space-between;align-items:center;gap:1rem}.brand{display:flex;align-items:center;gap:.75rem}.mark{width:44px;height:44px;border-radius:.75rem;background:var(--surface);border:1px solid color-mix(in srgb,var(--text) 10%,transparent);display:grid;place-items:center;color:var(--primary)}
-    .hero{padding:clamp(2.5rem,8vw,4rem) 0 2rem;display:grid;gap:2rem}.eyebrow{display:inline-flex;align-items:center;gap:.5rem;padding:.4rem .75rem;border-radius:999px;background:color-mix(in srgb,var(--primary) 14%,var(--surface));color:var(--primary);font-size:var(--t-xs);text-transform:uppercase;letter-spacing:.12em;font-weight:700}h1,h2,h3{font-family:var(--display);line-height:1.05;margin:0}h1{font-size:var(--t-2xl);max-width:10ch}h2{font-size:var(--t-xl)}h3{font-size:var(--t-lg)}.hero p,.lead{max-width:66ch;color:var(--muted)}
-    .grid-top{display:grid;grid-template-columns:2fr 1fr;gap:1rem}.panel{background:color-mix(in srgb,var(--surface) 92%,transparent);border:1px solid color-mix(in srgb,var(--text) 10%,transparent);border-radius:var(--r-xl);box-shadow:var(--shadow)}.panel-pad{padding:1.25rem}.stats{display:grid;gap:.75rem}.stat{padding-bottom:.75rem;border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent)}.stat:last-child{border-bottom:none;padding-bottom:0}.stat strong{display:block;font-family:var(--display);font-size:var(--t-xl)}
-    .tabs{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0 1.25rem}.tab{min-height:44px;padding:.6rem .9rem;border-radius:999px;background:var(--surface);border:1px solid color-mix(in srgb,var(--text) 10%,transparent);font-size:var(--t-sm);font-weight:700}.tab[aria-selected="true"]{background:var(--primary);color:#fff;border-color:transparent}.section{display:none}.section.active{display:block}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.card{padding:1.25rem;display:grid;gap:1rem;position:relative;overflow:hidden}.card::after{content:"";position:absolute;inset:auto -10% -40% auto;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--accent) 20%,transparent),transparent 70%);pointer-events:none}.top{display:flex;justify-content:space-between;gap:.75rem;align-items:start}.tag{font-size:var(--t-xs);text-transform:uppercase;letter-spacing:.1em;color:var(--accent);font-weight:700}.pill{padding:.4rem .7rem;border-radius:999px;background:color-mix(in srgb,var(--accent) 12%,var(--surface-2));font-size:var(--t-xs);font-weight:700}.rows{display:grid;gap:.75rem}.row{display:grid;grid-template-columns:140px 1fr;gap:.75rem;padding-top:.75rem;border-top:1px solid color-mix(in srgb,var(--text) 9%,transparent)}.row span{color:var(--muted);font-size:var(--t-sm)}.chips{display:flex;flex-wrap:wrap;gap:.4rem}.chip{padding:.35rem .65rem;border-radius:999px;background:var(--offset);font-size:var(--t-xs);font-weight:700}
-    .foot{margin-top:2rem;padding:1rem;color:var(--muted);font-size:var(--t-sm)}
-    .accent-road{--accent:var(--primary)}.accent-road2{--accent:var(--blue)}.accent-gravel{--accent:var(--orange)}.accent-mtb{--accent:var(--green)}.accent-event{--accent:var(--rust)}
-    @media (max-width:900px){.grid-top,.cards{grid-template-columns:1fr}}
-    @media (max-width:640px){.row,.top{grid-template-columns:1fr;display:grid}.wrap,.nav{padding-inline:.75rem}h1{max-width:12ch}}
+    :root{--bg:#0b1015;--panel:#121922;--panel2:#18212d;--text:#e8eef5;--muted:#9fb0c3;--accent:#39d0c8;--border:#283445;--road:#2f7eea;--mtb:#d8892b;--gravel:#7b8b52}
+    *{box-sizing:border-box} body{margin:0;font-family:Inter,sans-serif;background:linear-gradient(180deg,#091017,#0f1722);color:var(--text)}
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+    .hero{padding:28px;border:1px solid var(--border);border-radius:20px;background:rgba(18,25,34,.9);margin-bottom:24px}
+    h1{margin:0 0 8px;font-size:clamp(2rem,4vw,3.8rem)} p{color:var(--muted)}
+    .controls{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+    select{background:var(--panel2);color:var(--text);border:1px solid var(--border);padding:12px 14px;border-radius:12px}
+    .day{margin:18px 0 26px}
+    .dayhead{display:flex;justify-content:space-between;gap:12px;align-items:end;margin-bottom:10px}
+    .dayhead h2{margin:0;font-size:1.25rem}.count{color:var(--muted);font-size:.95rem}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+    .card{background:var(--panel);border:1px solid var(--border);border-radius:18px;padding:18px}
+    .top{display:flex;justify-content:space-between;gap:8px;align-items:start;margin-bottom:10px}
+    .badge{font-size:.78rem;padding:6px 10px;border-radius:999px;font-weight:700}
+    .Road{background:rgba(47,126,234,.18);color:#9dc3ff}.MTB{background:rgba(216,137,43,.18);color:#ffd39e}.Gravel{background:rgba(123,139,82,.2);color:#d1dfaa}
+    .race{font-size:1.08rem;font-weight:800}.stage{color:var(--accent);font-weight:700;margin-top:4px}
+    .meta{display:grid;gap:8px;margin-top:14px}.meta div{color:var(--muted);font-size:.94rem}.meta strong{color:var(--text)}
+    .streams{margin-top:16px;padding-top:14px;border-top:1px solid var(--border);display:grid;gap:8px;font-size:.92rem}
   </style>
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
-<header>
-  <div class="nav">
-    <div class="brand"><div class="mark"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="46" r="10"/><circle cx="46" cy="46" r="10"/><path d="M18 46 28 24h10l8 22"/><path d="M25 24h14"/><path d="M32 18l5 6"/></svg></div><div><div style="font-size:var(--t-xs);color:var(--muted);text-transform:uppercase;letter-spacing:.12em">June + July 2026</div><div>Road, Gravel & MTB</div></div></div>
-    <button class="tab" data-theme-toggle aria-label="Switch color mode">Theme</button>
+  <div class="wrap">
+    <section class="hero">
+      <h1>LikeB1kes stage-by-stage guide</h1>
+      <p>Daily cycling coverage for UK, USA, and Canada viewers. Built around race days and individual stages instead of one card per event.</p>
+      <div class="controls">
+        <select id="discipline"><option value="all">All disciplines</option><option value="Road">Road</option><option value="MTB">MTB</option><option value="Gravel">Gravel</option></select>
+        <select id="region"><option value="uk">UK streams</option><option value="usa">USA streams</option><option value="canada">Canada streams</option></select>
+      </div>
+    </section>
+    <main id="app"></main>
   </div>
-</header>
-<main id="main" class="wrap">
-  <section class="hero">
-    <div><span class="eyebrow">UK • USA • Canada</span><h1>Upcoming cycling races for June and July.</h1></div>
-    <div class="grid-top">
-      <article class="panel panel-pad"><p class="lead">A curated guide with mixed disciplines, built from current race calendars and broadcaster references. The same card layout works for road, gravel, and MTB, while keeping UK and North American viewing options visible at a glance.</p></article>
-      <aside class="panel panel-pad stats" aria-label="Guide stats"><div class="stat"><span style="color:var(--muted);font-size:var(--t-sm)">Categories</span><strong>3</strong></div><div class="stat"><span style="color:var(--muted);font-size:var(--t-sm)">Months</span><strong>June + July</strong></div><div class="stat"><span style="color:var(--muted);font-size:var(--t-sm)">Regions</span><strong>UK / USA / Canada</strong></div></aside>
-    </div>
-  </section>
-  <div class="tabs" role="tablist" aria-label="Discipline filters">
-    <button class="tab" role="tab" aria-selected="true" data-filter="all">All</button>
-    <button class="tab" role="tab" aria-selected="false" data-filter="road">Road</button>
-    <button class="tab" role="tab" aria-selected="false" data-filter="gravel">Gravel</button>
-    <button class="tab" role="tab" aria-selected="false" data-filter="mtb">MTB</button>
-  </div>
-  <section class="section active" data-section="all"><div class="cards">
-    <article class="panel card accent-road" data-discipline="road"><div class="top"><div><div class="tag">Road · WorldTour</div><h3>Tour de Suisse</h3></div><span class="pill">June 17–21</span></div><div class="rows"><div class="row"><span>Profile</span><strong>Mixed / mountainous stages</strong></div><div class="row"><span>UK</span><strong>TNT Sports / HBO Max</strong></div><div class="row"><span>USA</span><strong>Peacock / NBC Sports</strong></div><div class="row"><span>Canada</span><strong>FloBikes</strong></div></div></article>
-    <article class="panel card accent-road2" data-discipline="road"><div class="top"><div><div class="tag">Road · Grand Tour</div><h3>Tour de France</h3></div><span class="pill">July 4–26</span></div><div class="rows"><div class="row"><span>Profile</span><strong>All-round stage race</strong></div><div class="row"><span>UK</span><strong>TNT Sports / HBO Max</strong></div><div class="row"><span>USA</span><strong>Peacock</strong></div><div class="row"><span>Canada</span><strong>FloBikes</strong></div></div></article>
-    <article class="panel card accent-gravel" data-discipline="gravel"><div class="top"><div><div class="tag">Gravel · UCI Gravel World Series</div><h3>Dalby Grit</h3></div><span class="pill">June 19–21</span></div><div class="rows"><div class="row"><span>Profile</span><strong>Competitive gravel / forest terrain</strong></div><div class="row"><span>UK</span><strong>Event stream / TBA</strong></div><div class="row"><span>USA</span><strong>Event stream / TBA</strong></div><div class="row"><span>Canada</span><strong>Event stream / TBA</strong></div></div></article>
-    <article class="panel card accent-gravel" data-discipline="gravel"><div class="top"><div><div class="tag">Gravel · UCI Gravel World Series</div><h3>Oregon Trail Gravel Grinder</h3></div><span class="pill">July 8–12</span></div><div class="rows"><div class="row"><span>Profile</span><strong>Stage gravel endurance</strong></div><div class="row"><span>UK</span><strong>Gravel Earth Series TV / TBA</strong></div><div class="row"><span>USA</span><strong>Gravel Earth Series TV / TBA</strong></div><div class="row"><span>Canada</span><strong>Gravel Earth Series TV / TBA</strong></div></div></article>
-    <article class="panel card accent-mtb" data-discipline="mtb"><div class="top"><div><div class="tag">MTB · UCI World Cup</div><h3>Lenzerheide</h3></div><span class="pill">June 19–21</span></div><div class="rows"><div class="row"><span>Profile</span><strong>Cross-country / downhill</strong></div><div class="row"><span>UK</span><strong>TNT Sports / UCI YouTube</strong></div><div class="row"><span>USA</span><strong>UCI YouTube / event platform</strong></div><div class="row"><span>Canada</span><strong>UCI YouTube / event platform</strong></div></div></article>
-    <article class="panel card accent-mtb" data-discipline="mtb"><div class="top"><div><div class="tag">MTB · UCI World Cup</div><h3>Pal Arinsal</h3></div><span class="pill">July 9–12</span></div><div class="rows"><div class="row"><span>Profile</span><strong>Cross-country / downhill</strong></div><div class="row"><span>UK</span><strong>TNT Sports / UCI YouTube</strong></div><div class="row"><span>USA</span><strong>UCI YouTube / event platform</strong></div><div class="row"><span>Canada</span><strong>UCI YouTube / event platform</strong></div></div></article>
-    <article class="panel card accent-event" data-discipline="gravel"><div class="top"><div><div class="tag">Gravel · Series</div><h3>Migration Gravel Race</h3></div><span class="pill">June 16–19</span></div><div class="rows"><div class="row"><span>Profile</span><strong>Multi-day gravel stage race</strong></div><div class="row"><span>UK</span><strong>Series stream / TBA</strong></div><div class="row"><span>USA</span><strong>Series stream / TBA</strong></div><div class="row"><span>Canada</span><strong>Series stream / TBA</strong></div></div></article>
-    <article class="panel card accent-event" data-discipline="gravel"><div class="top"><div><div class="tag">Gravel · Series</div><h3>Lost & Found Gravel</h3></div><span class="pill">June 13</span></div><div class="rows"><div class="row"><span>Profile</span><strong>One-day gravel race</strong></div><div class="row"><span>UK</span><strong>Series stream / TBA</strong></div><div class="row"><span>USA</span><strong>Series stream / TBA</strong></div><div class="row"><span>Canada</span><strong>Series stream / TBA</strong></div></div></article>
-  </div></section>
-  <section class="section" data-section="road"><div class="cards"><article class="panel card accent-road"><div class="top"><div><div class="tag">Road · WorldTour</div><h3>Tour de Suisse</h3></div><span class="pill">June 17–21</span></div><div class="rows"><div class="row"><span>Profile</span><strong>Mixed / mountainous stages</strong></div><div class="row"><span>UK</span><strong>TNT Sports / HBO Max</strong></div><div class="row"><span>USA</span><strong>Peacock / NBC Sports</strong></div><div class="row"><span>Canada</span><strong>FloBikes</strong></div></div></article><article class="panel card accent-road2"><div class="top"><div><div class="tag">Road · Grand Tour</div><h3>Tour de France</h3></div><span class="pill">July 4–26</span></div><div class="rows"><div class="row"><span>Profile</span><strong>All-round stage race</strong></div><div class="row"><span>UK</span><strong>TNT Sports / HBO Max</strong></div><div class="row"><span>USA</span><strong>Peacock</strong></div><div class="row"><span>Canada</span><strong>FloBikes</strong></div></div></article></div></section>
-  <section class="section" data-section="gravel"><div class="cards"><article class="panel card accent-gravel"><div class="top"><div><div class="tag">Gravel · UCI Gravel World Series</div><h3>Dalby Grit</h3></div><span class="pill">June 19–21</span></div><div class="rows"><div class="row"><span>Profile</span><strong>Competitive gravel / forest terrain</strong></div><div class="row"><span>UK</span><strong>Event stream / TBA</strong></div><div class="row"><span>USA</span><strong>Event stream / TBA</strong></div><div class="row"><span>Canada</span><strong>Event stream / TBA</strong></div></div></article><article class="panel card accent-gravel"><div class="top"><div><div class="tag">Gravel · UCI Gravel World Series</div><h3>Oregon Trail Gravel Grinder</h3></div><span class="pill">July 8–12</span></div><div class="rows"><div class="row"><span>Profile</span><strong>Stage gravel endurance</strong></div><div class="row"><span>UK</span><strong>Gravel Earth Series TV / TBA</strong></div><div class="row"><span>USA</span><strong>Gravel Earth Series TV / TBA</strong></div><div class="row"><span>Canada</span><strong>Gravel Earth Series TV / TBA</strong></div></div></article></div></section>
-  <section class="section" data-section="mtb"><div class="cards"><article class="panel card accent-mtb"><div class="top"><div><div class="tag">MTB · UCI World Cup</div><h3>Lenzerheide</h3></div><span class="pill">June 19–21</span></div><div class="rows"><div class="row"><span>Profile</span><strong>Cross-country / downhill</strong></div><div class="row"><span>UK</span><strong>TNT Sports / UCI YouTube</strong></div><div class="row"><span>USA</span><strong>UCI YouTube / event platform</strong></div><div class="row"><span>Canada</span><strong>UCI YouTube / event platform</strong></div></div></article><article class="panel card accent-mtb"><div class="top"><div><div class="tag">MTB · UCI World Cup</div><h3>Pal Arinsal</h3></div><span class="pill">July 9–12</span></div><div class="rows"><div class="row"><span>Profile</span><strong>Cross-country / downhill</strong></div><div class="row"><span>UK</span><strong>TNT Sports / UCI YouTube</strong></div><div class="row"><span>USA</span><strong>UCI YouTube / event platform</strong></div><div class="row"><span>Canada</span><strong>UCI YouTube / event platform</strong></div></div></article></div></section>
-  <div class="foot panel panel-pad">Road coverage prioritizes TNT Sports/HBO Max in the UK, Peacock or NBC Sports in the US, and FloBikes in Canada. Gravel and MTB entries are intentionally mixed between official series streams, UCI YouTube, and event pages where current rights are often promoter-specific.</div>
-</main>
 <script>
-(()=>{const root=document.documentElement,btn=document.querySelector('[data-theme-toggle]');let d=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';root.setAttribute('data-theme',d);btn.textContent='Theme: '+(d==='dark'?'Dark':'Light');btn.addEventListener('click',()=>{d=d==='dark'?'light':'dark';root.setAttribute('data-theme',d);btn.textContent='Theme: '+(d==='dark'?'Dark':'Light')});document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(x=>{x.setAttribute('aria-selected','false');x.classList.remove('active')});b.setAttribute('aria-selected','true');const f=b.dataset.filter;document.querySelectorAll('.section').forEach(s=>s.classList.toggle('active',s.dataset.section===f||f==='all'));document.querySelectorAll('[data-discipline]').forEach(c=>c.style.display=(f==='all'||c.dataset.discipline===f)?'grid':'none');document.querySelectorAll('.section[data-section="all"] .card').forEach(c=>c.style.display='grid')}))})();
+const app=document.getElementById('app');
+const discipline=document.getElementById('discipline');
+const region=document.getElementById('region');
+let races=[];
+function fmtDate(d){return new Date(d+'T12:00:00').toLocaleDateString(undefined,{weekday:'long',month:'short',day:'numeric',year:'numeric'});} 
+function render(){
+  const disc=discipline.value;
+  const filtered=races.filter(r=>disc==='all'||r.discipline===disc);
+  const grouped=filtered.reduce((acc,r)=>{(acc[r.date]??=[]).push(r);return acc;},{});
+  const dates=Object.keys(grouped).sort();
+  app.innerHTML=dates.map(date=>`<section class="day"><div class="dayhead"><h2>${fmtDate(date)}</h2><div class="count">${grouped[date].length} item(s)</div></div><div class="cards">${grouped[date].map(r=>`<article class="card"><div class="top"><div><div class="race">${r.race}</div><div class="stage">${r.stage}</div></div><span class="badge ${r.discipline}">${r.discipline}</span></div><div class="meta"><div><strong>Route:</strong> ${r.route}</div><div><strong>Profile:</strong> ${r.profile}</div><div><strong>Distance:</strong> ${r.distance}</div></div><div class="streams"><div><strong>UK:</strong> ${r.uk}</div><div><strong>USA:</strong> ${r.usa}</div><div><strong>Canada:</strong> ${r.canada}</div></div></article>`).join('')}</div></section>`).join('');
+}
+fetch('./races.json').then(r=>r.json()).then(d=>{races=d;render()});
+discipline.addEventListener('change',render); region.addEventListener('change',render);
 </script>
 </body>
 </html>

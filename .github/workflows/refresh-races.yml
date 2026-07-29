@@ -17,14 +17,16 @@ jobs:
         with:
           persist-credentials: true
 
-      - name: Set up Python
+           - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
       - name: Update races.json
         run: python scripts/update_races.py
-
       - name: Commit changes
         run: |
           if git diff --quiet -- races.json; then
